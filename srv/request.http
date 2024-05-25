@@ -1,0 +1,52 @@
+### GET Call
+
+GET http://localhost:4004/odata/v4/my_cap/Training
+
+### GET Call Single
+
+GET http://localhost:4004/odata/v4/my_cap/Training/0b990302-6b13-40e4-a0d4-bd0645092036
+
+### Create
+
+POST http://localhost:4004/odata/v4/my_cap/Training
+Content-Type: application/json
+
+{
+  "title": "karnal",
+  "descr": "depths",
+  "author": "vbuyy",
+  "genre": "romance",
+  "stock": "high",
+  "trainee": "vegfx"
+}
+
+### GET Call Single
+
+GET http://localhost:4004/odata/v4/my_cap/Training/8ee279a7-38bd-483a-a9dd-f0cd0a9c282f
+
+### PUT Call
+
+PUT http://localhost:4004/odata/v4/my_cap/Training/0fce2499-5bf1-407b-a4ef-5a91228c4771
+Content-Type: application/json
+
+{   
+  "stock": "low",
+  "trainee": "voqwh"
+}
+
+### PATCH Call
+
+PATCH http://localhost:4004/odata/v4/my_cap/Training/0fce2499-5bf1-407b-a4ef-5a91228c4771
+Content-Type: application/json
+
+{   
+  "stock": "low",
+  "trainee": "voqwh"
+}
+
+### Delete Call
+
+DELETE http://localhost:4004/odata/v4/my_cap/Training/0fce2499-5bf1-407b-a4ef-5a91228c4771
+Content-Type: application/json
+
+{}
